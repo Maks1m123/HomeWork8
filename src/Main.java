@@ -15,14 +15,14 @@ public class Main {
 
 
         int[] weight = new int[3];
-        weight[0] = 1;
-        weight[1] = 2;
-        weight[2] = 3;
         for (int i = 0; i < weight.length; i++) {
-            System.out.println(weight[0]);
-            System.out.println(weight[1]);
-            System.out.println(weight[2]);
-            break;
+            weight[i] = i + 1;
+            if (i != 0) {
+            }
+            System.out.print(weight[i]);
+
+            System.out.println();
+
 
         }
         System.out.println("Задание номер 1 часть 3");
@@ -55,9 +55,6 @@ public class Main {
         }
         System.out.println();
         double[] free1 = {1.75, 2.57, 6.987};
-        free1[0] = 1.75;
-        free1[1] = 2.57;
-        free1[2] = 6.987;
         for (int i = 0; i < free1.length; i++) {
             if (i != 0) {
                 System.out.print(", ");
@@ -75,6 +72,16 @@ public class Main {
             }
         }
         System.out.println();
+
+        double[] free2 = {1.75, 2.57, 6.987};
+        for (int j = free2.length - 1; j >= 0; j--) {
+            System.out.print(free2[j]);
+            if (j != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
         //Задача номер 4
         System.out.println("Задание номер 4 ");
         int[] bananas = {1, 3, 5, 7, 9};
