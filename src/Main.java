@@ -65,6 +65,13 @@ public class Main {
 
         //Задание номер 3
         System.out.println("Задание номер 3");
+        for (int i = agg.length - 1; i >= 0; i--){
+            System.out.print(agg[i]);
+            if (i != 0){
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
         for (int i = weight.length - 1; i >= 0; i--) {
             System.out.print(weight[i]);
             if (i != 0) {
